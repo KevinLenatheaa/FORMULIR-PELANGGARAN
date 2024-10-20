@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendataan Pelanggaran Sekolah</title>
+
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        form{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0,5);
+        }
+
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+
+        button{
+            background-color: azure;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pendataan Pelanggaran Sekolah</h1>
+
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Nama Siswa :
+            </label>
+            <input type="text" id="name" placeholder="Maasukan Nama Siswa..">
+        </div>
+
+        <div class="form-control">
+            <label for="kelas" id="label-kelas">
+                Kelas Siswa :
+            </label>
+            <input type="text" id="Kelas" placeholder="Maasukan Kelas Siswa..">
+        </div>
+
+        <div class="form-control">
+            <label for="hari" id="label-hari">
+                Hari/Tanggal Kejadian :
+            </label>
+            <input type="date" id="date" placeholder="Maasukan Hari/Tanggal Kejadian..">
+        </div>
+
+        <div class="form-control">
+            <label for="nis" id="label-nis">
+                NIS Siswa :
+            </label>
+            <input type="text" id="nis" placeholder="Maasukan NIS Siswa..">
+        </div>
+
+        <div class="form-control">
+            <label for="nisn" id="label-nisn">
+                NISN Siswa :
+            </label>
+            <input type="text" id="nisn" placeholder="Maasukan NIS Siswa..">
+        </div>
+
+        <div class="form-control">
+            <label for="jurusan" id="label-jurusan">
+                Jurusan :
+            </label>
+
+            <select name="jurusan" id="jurusan">
+                <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+                <option value="TKJ">Teknik Komputer Jaringan (TKJ)</option>
+                <option value="DKV">Desain Komunikasi Visual (DKV)</option>
+                <option value="Animasi">Animasi (AN)</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Jenis Kelamin :
+            </label>
+
+            <label for="rekomendasi-1">
+                <input type="radio" id="rekomendasi-1"
+                name="rekomendasi">Laki-Laki
+            </label>
+            <label for="rekomendasi-2">
+                <input type="radio" id="rekomendasi-2"
+                name="rekomendasi">Perempuan
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Jenis Pelanggaran!</label>
+            <label for="input-1">
+                <input type="checkbox" name="input-1">Ringan
+            </label>
+            <label for="input-2">
+                <input type="checkbox" name="input-2">Berat
+            </label>
+            <label for="input-3">
+                <input type="checkbox" name="input-3">Sangat Berat
+            </label>
+         </div>
+
+         <div class="form-control">
+            <label for="sanksi">
+                Masukan Pelanggaran Siswa!
+            </label>
+            <textarea name="pelanggaran" id="sanksi"
+            placeholder="Masukan Pelanggaran Yang Dilakukan Oleh Siswa Disini.."></textarea>
+         </div>
+
+        <div class="form-control">
+            <label for="sanksi">
+                Berikan Sanksi Untuk Siswa!
+            </label>
+            <textarea name="sanksi" id="sanksi"
+            placeholder="Masukan Sanksi Untuk Siswa Disini.."></textarea>
+         </div>
+
+         <button type="submit" value="submit">
+            Simpan
+         </button>
+
+    </form>    
+</body>
+</html>
